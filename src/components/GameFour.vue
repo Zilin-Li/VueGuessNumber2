@@ -26,11 +26,11 @@
 
 <script>
 
-import GameFour from '../model/computerguess2.js'
+import GameFour from '../model/GameFour.js'
 var newGame = new GameFour
 
 export default {
-  name: 'ComputerGuess2',
+  name: 'GameFour',
   data () {
     return newGame
   },

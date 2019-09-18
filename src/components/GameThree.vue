@@ -6,8 +6,10 @@
         </div>
 
         <div class="col-lg-12 marginTop15px">
+        <form action="#" method="post" v-on:submit.prevent="setNum">
           <input type="text" v-model="userNumber">
           <input type="button" :disabled='setIsDisabled' value="Set Number" @click ="setNum" class="btn btn-primary">
+        </form>
         </div>
 
         <div class="marginTop15px">
@@ -27,13 +29,14 @@
 </template>
 
 
+
 <script>
 
-import GameThree from '../model/computerguess1.js'
+import GameThree from '../model/GameThree.js'
 var newGame = new GameThree
 
 export default {
-  name: 'ComputerGuess1',
+  name: 'GameThree',
   data () {
     return newGame
   },
@@ -66,7 +69,6 @@ export default {
       created(){
         newGame.init()
       }
-
 }
 }
 </script>

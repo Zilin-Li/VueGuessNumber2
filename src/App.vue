@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <router-link v-bind:to="'/'" class="btn btn-primary">Game One</router-link>
-    <router-link v-bind:to="'/HumanGuess2'" class="btn btn-primary">Game Two</router-link>
-    <router-link v-bind:to="'/ComputerGuess1'" class="btn btn-primary">Game Three</router-link>
-    <router-link v-bind:to="'/ComputerGuess2'" class="btn btn-primary">Game Four</router-link>
+    <router-link v-bind:to="'/GameTwo'" class="btn btn-primary">Game Two</router-link>
+    <router-link v-bind:to="'/GameThree'" class="btn btn-primary">Game Three</router-link>
+    <router-link v-bind:to="'/GameFour'" class="btn btn-primary">Game Four</router-link>
 
       <router-view/>
 
